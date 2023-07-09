@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+
+    <!-- Font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS CDN  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Style.css  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center justify-content-center">
+                    <div class="logo">
+                        <a target="_blank" href="https://www.linkedin.com/in/sumanth-naik-dev/">Sumanth Naik</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="socials">
+                        <a target="_blank" href="https://www.instagram.com/_sumanth_naik/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        
+                        <a target="_blank" href="https://github.com/SNDevCodes">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="container flex center-item">
+        <div class="weather-container container">
+
+            <div class="search-bar flex">
+                <input placeholder="Enter The City Name" type="text" class="city-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="error">
+                Enter a Valid City Name
+            </div>
+
+            <div class="weather-content">
+                <img src="./images/clouds.png" class="weather-icon" alt="Weather-icon">
+                <h1 class="temp">22 °C</h1>
+                <h2 class="cityName">Bangalore</h2>
+                <div class="clim-info">
+                    <div class="detail-box">
+                        <img src="./images/humidity.png" alt="" class="humidity">
+                        <div class="weather-detail">
+                            <p class="humidity-perc"> 50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <img src="./images/wind.png" alt="" class="humidity">
+                        <div class="weather-detail">
+                            <p class="wind-perc"> 50 km/h</p>
+                            <p>WindSpeed</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Weather javascript link -->
+    <script src="./weather.js"></script>
+
+    <!-- Bootstrap Javascript CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
